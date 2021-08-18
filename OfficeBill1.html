@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-color:beige;
+/*background-image:url("Html/java1.jpg");
+/*background-image: url("images/clouds-bg.jpg");*/
+}
+#div{
+color: white;
+background-color: black;
+width:200px;
+padding:5px;
+border-radius:20px;
+font-family:Times new Roman;
+border: 5px solid maroon;
+box-shadow: 2px 4px;
+}
+.click
+{
+background-color:blue;
+color:white;
+border-radius:10px;
+font-size:20px;
+border: groove red ;
+}
+
+#two{
+color:white;
+background-color:grey;
+border-radius:20px;
+max-width:250px;
+text-align:left;
+text-transform:Uppercase;
+}
+
+input
+{
+transition-delay:.2s;
+}
+input:hover
+{
+background-color: transparent;
+color:yellow;
+}
+</style> 
+
+<title>OFFICE BILL</title> 
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head> 
+
+<body>
+      <!--****DIV STARTING***-->
+<center>
+<div id="two">        <!--***DIV ENDING-->
+<p id="para"></p>
+</div>
+
+<div id="div"> 
+<form>
+<center>
+<!--FOUR BUTTON ONEBYONE NUM,NUM,BUTTON,RESET-->
+  <b>Enter copies:</b> <input type="number" placeholder="Copies" id="copy" min="10" max="60" class="click" required/>
+<!--<p><input type="number" placeholder="Agent No" id="agent" /></p>-->
+<p><input type="button" onclick="bill()" value="Bill" class="click"/>
+
+<input type="reset" class="click"/> </p>
+</center>
+</form>
+</div>
+</center>
+
+         <!--BILL SCRIPT STARTING-->
+<script>
+        //***welcome using onload***
+/*window.onload=welcome;
+function welcome(){
+alert("welcome sulthan");
+}*/
+
+          //BILL CODES STARTING
+function bill()
+{
+
+/*var agents=//document.getElementById("agent").value;
+prompt("Enter AgentNo");*/
+
+var copies=document.getElementById("copy").value;
+if(copies== null && copies==" ")
+{
+alert("Try Again");
+return true;
+}
+else
+{
+var bill=20*copies;
+var com=5*copies;
+var amount=bill-com;
+document.getElementById("div").innerHTML=("<br>"+"<br>"+"<b>"+"<center>"+"AgentNo:"+"</center>"+"</br>"+"<br>"+"<br>"+"<br>"+"Unit price = Rs.20"+"<br>"+
+"Number of copies ="+copies+"<br>"+
+"Bill Amount ="+bill+"<br>"+
+"commission ="+com+"<br>"+
+"Total amount ="+amount+"<br>"+"<br>");
+
+}
+}
+         //BILL SCRIPT ENDING
+//GIVE FOCUS TO AGENT IN BACKGROUND
+var x=document.getElementById("copy");
+x.addEventListener("focus",function(){
+x.style.background="white";
+x.style.color="red";
+});
+</script> 
+
+</body>
+</html>
