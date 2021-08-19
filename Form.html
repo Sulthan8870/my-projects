@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Form</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+body{
+background-color:black;
+}
+div{
+background-color:#C9C9C9;
+padding:20px;
+}
+</style>
+</head>
+<body>
+
+<div>
+<h1 style="text-align: center">வணக்கம்</h1>
+<form enctype="multipart/form-data"method="post">
+<fieldset>
+<legend>USERNAME:</legend>
+<br>
+<input type="text"name="username"id="name"placeholder="username"size="20"maxlength="15"value="sulthan"style="background-color:#F4F590">
+ <br>
+<br> 
+</fieldset>
+password:
+<br><input type="password"name="pwd"placeholder="Enter your password"size="15"maxlength="9">
+<br>
+<br>
+<label for="comments">comments:</label>
+<br>
+<textarea name="user_comments"id="comments"placeholder="Enter comments"rows="5"cols="25"></textarea>
+<br>
+<br>
+<label for="Emailid">Email-id:</label>
+<br>
+<input type="email"name="email"id="emailid" placeholder="Email_id" size="30" required>
+<br>
+<br>
+<label for="Age">Age:</label>
+<br>
+<input type="number"name="no"id="Age"placeholder="age" min="18" max="60">
+<br>
+<br>
+<label for="date">DOB:</label>
+<br>
+<input type="date"name="dob"id="DoB" placeholder="Birth">
+<br>
+<br>
+<label for="Range">RANGE:</label>
+<br>
+<input type="range"name="range"id="Range"min="0"max="1000" step="100">
+<br>
+<br>
+<label for="Url">Email-url:</label>
+<br>
+<input type="url"name="url"id="Url" placeholder="Enter url">
+<br>
+<br>
+<label for="wk">week:</label>
+<br>
+<input type="week"name="week"id="wk" placeholder="week">
+<br>
+<br>
+<label for="time">time:</label>
+<br>
+<input type="time"name="time"id="time" placeholder="time">
+<br>
+<br>
+<label for="search">job search:</label>
+<br>
+<input type="search"name="search"id="search" placeholder="search-plz">
+<br>
+<br>
+<img src="java1.jpg" width="100px"/>
+<br>
+<br>
+same audio:
+<br>
+<audio src="mp3-Vikram_Vedha_Bgm_-_Ringtone_-_BGM_KADAI_-_Download_link_👇👇(128k) AEMix1585051442243.mp3.mp3"controls>
+This doesn't support
+</audio>
+<br><br>
+same video:
+<br>
+<video src="mp4-rrr.mp4"width="250px"controls>
+This doesn't support
+</video>
+<br>
+<br>
+<!--iframe width="250px"height="500"
+src="https:youtube"frameborder="0"allow="accelerometer;autoplay"></frame-->
+Please upload file:
+<br>
+<input type="File">
+<br>
+<br>
+Please select Gender:
+<br>
+<input type="radio"name="gender"value="male" checked>male
+<input type="radio"name="gender"value="male" >Female
+<br>
+<br>
+select your Hobbies:
+<br>
+<input type="checkbox"name="multiple_choice[]"value="cricket">cricket
+<input type="checkbox"name="multiple_choice[]"value="Football">Football
+<input type="checkbox"name="multiple_choice[]"value="volleyball">volleyball
+<input type="checkbox"name="multiple_choice[]"value="Hockey">Hockey
+<br>
+<br>
+select No:
+<br>
+<select>
+<option>select</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+</select>
+<br>
+<br>
+<img src="/internalstorage/Html/java1.jpg"/>
+<input type="submit"value="ok"style="background-color:green;color:white">
+</form>
+</div>
+</body>
+</html>
